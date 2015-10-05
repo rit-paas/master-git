@@ -14,7 +14,7 @@ ENV HAPROXY_CONFIG /etc/haproxy/haproxy.cfg
 
 EXPOSE 8080
 
-USER default
+USER 1001
 
 ENTRYPOINT ["haproxy"]
 
