@@ -16,4 +16,6 @@ EXPOSE 8080
 
 USER default
 
+ENTRYPOINT ["haproxy"]
 
+CMD ["-f", "/etc/haproxy/haproxy.cfg"]
